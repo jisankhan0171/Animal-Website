@@ -1,0 +1,196 @@
+@media (max-width: 540px) {
+
+  /* -------------------header------------------- */
+  .container {
+    max-width: 100%;
+    padding: 0px 15px;
+  }
+
+  header {
+    height: 100%;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  header .main-nav {
+    display: none;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  /* -------------------banner------------------------ */
+  .banner-text {
+    flex-basis: 100%;
+  }
+
+  .banner-img {
+    flex-basis: 100%;
+  }
+
+  .banner-text h1 {
+    font-size: 3.3rem;
+    margin-top: 3rem;
+  }
+
+  .banner-text p {
+    width: 100%;
+  }
+
+  .banner .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.3rem;
+  }
+
+  .banner-btn-outline {
+    margin-left: 0rem;
+  }
+
+  .banner img {
+    max-width: 90%;
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  /* ---------------------survicess------------------------ */
+  #survicess {
+    padding: 5rem 0;
+    padding-bottom: 7rem;
+  }
+
+  .survicess-text {
+    flex-basis: 100%;
+  }
+
+  .survicess-text h2 {
+    font-size: 3rem;
+  }
+
+  .survicess-text p {
+    width: 100%;
+  }
+
+  .survicess-img {
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+
+  .survicess-img figure {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .survicess-img figure .sur-img {
+    width: 100%;
+  }
+
+  .survicess-img .squre {
+    display: none;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  /* ----------------------card---------------------- */
+  #card {
+    padding: 5rem 0;
+  }
+
+  #card .card-row .box {
+    flex-basis: 100%;
+  }
+
+  .tittle {
+    font-size: 3rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .desc {
+    font-size: 1.8rem;
+  }
+
+  #card .card-row {
+    margin-top: 8rem;
+  }
+
+  #card .card-row .box {
+    margin-bottom: 70px;
+  }
+
+  #card .card-row .box:last-child {
+    margin-bottom: 0px;
+  }
+
+  #card .box-content {
+    margin-top: 1rem;
+  }
+
+  .main-card .box-content {
+    padding: 0rem
+  }
+
+  /* ------------- survicess 2 ---------------- */
+  .survicess-tow .survicess-img {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  /* ---------------------------team---------------------- */
+  .team .card-row .box {
+    flex-basis: 100% !important;
+  }
+  
+  /* -------------------- work ------------------- */
+  #work {
+    padding: 5rem 0;
+  }
+
+  #work .work-row .work-box {
+    flex-basis: 100%;
+  }
+
+  #work .work-row .work-box {
+    margin-bottom: 7rem;
+  }
+
+  #work .work-row .work-box:last-child {
+    margin-bottom: 0;
+  }
+
+  #work .work-row .work-box h5 {
+    font-size: 2.5rem;
+  }
+
+  #work .work-row .work-box p {
+    font-size: 2.6rem;
+    margin-top: 2.7rem;
+  }
+
+  /* --------------------------blog---------------------------- */
+  .blog .card-row .box {
+    flex-basis: 100% !important;
+  }
+
+  /* footer */
+  footer {
+    padding: 5rem 0;
+  }
+
+  footer .footer-row .col1, footer .footer-row .col2 {
+    flex-basis: 100%;
+    margin-bottom: 5rem;
+  }
+
+  footer .footer-content {
+    margin-top: 1rem;
+  }
+
+  footer .footer-row .col3 {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --yellow: #03A9F4;
+  --blue: #1c5080;
+  --text: #333333;
+  --light: #555;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+
+.btn {
+  background: var(--blue);
+  border: 2px solid var(--blue);
+  color: #fff;
+  padding: 1.2rem 2.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-block;
+  transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ============= HEADER =============== */
+header {
+  width: 100%;
+  height: 100vh;
+  background: var(--yellow);
+}
+
+/* NAV */
+header .navbar {
+  background: rgba(0, 0, 0, .2);
+  padding: 1.5rem 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* UL NAV */
+header .main-nav {
+  display: flex;
+}
+
+header .main-nav li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0rem 2.5rem;
+  display: inline-block;
+  transition: .2s ease-in;
+}
+
+header .main-nav li a:hover {
+  transform: translateY(-3px);
+  opacity: .8;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  height: 4rem;
+  width: 16rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: #999;
+  font-weight: 500;
+}
+
+.search-bar input:focus {
+  border: 0;
+  outline: 0;
+}
+
+.search-icon {
+  width: 4rem;
+  height: 4rem;
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  background: #09cac8;
+  transition: .3s ease-in;
+}
+
+.search-icon img {
+  width: 1.8rem;
+}
+
+/* BANNER */
+.banner-row {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  flex-basis: 60%;
+}
+
+.banner-text h1 {
+  font-size: 5.5rem;
+  color: #fff;
+  margin-bottom: 1.4rem;
+}
+
+.banner-text p {
+  font-size: 2rem;
+  color: #fff;
+  width: 80%;
+  margin-bottom: 5rem;
+}
+
+.banner-img {
+  flex-basis: 40%;
+}
+
+.banner img {
+  width: 35rem;
+  display: block;
+  margin-left: auto;
+}
+
+.banner-btn-outline {
+  background: transparent;
+  border-color: #fff;
+  margin-left: 2rem;
+}
+
+.banner-btn-outline:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+/* ================ SURVICESS ================ */
+#survicess {
+  padding: 10rem 0;
+}
+
+.survicess-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* text */
+.survicess-text {
+  flex-basis: 50%;
+  color: var(--text);
+}
+
+.survicess-text h2 {
+  font-size: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+.survicess-text p {
+  font-size: 2rem;
+  width: 80%;
+  margin-bottom: 5rem;
+}
+
+.sur-btn {
+  background: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.sur-btn:hover {
+  background: transparent;
+  color: var(--yellow);
+}
+
+/* img div */
+.survicess-img {
+  flex-basis: 50%;
+}
+
+.survicess-img figure {
+  width: 80%;
+  margin-left: auto;
+  position: relative;
+}
+
+.survicess-img figure .sur-img {
+  width: 100%;
+}
+
+.survicess-img .squre {
+  width: 30rem;
+  height: 30rem;
+  background: var(--yellow);
+  position: absolute;
+  bottom: -3.5rem;
+  left: -3.5rem;
+  z-index: -2;
+}
+
+.survicess-img .overlay {
+  width: 100%;
+  height: 100%;
+  background: var(--yellow);
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: ;
+  opacity: .3;
+}
+
+.survicess-img .video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* ============== CARD SECTION ============== */
+#card {
+  background: var(--yellow);
+  color: #fff;
+  padding: 7rem 0;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.tittle {
+  font-size: 5rem;
+  margin-bottom: 1.8rem;
+}
+
+.desc {
+  font-size: 2rem;
+}
+
+/* Card Row */
+#card .card-row {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Box */
+#card .card-row .box {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+#card .box-content {
+  margin-top: 3.6rem;
+}
+
+.main-card .box-content {
+  padding: 1rem
+}
+
+/* Img */
+#card .box-img img {
+  width: 100%;
+}
+
+#card .card-row .box h4 {
+  font-size: 2.8rem;
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+}
+
+#card .card-row .box p {
+  font-size: 1.8rem;
+}
+
+/* ================= SURVICESS TWO =============== */
+.survicess-tow .survicess-text {
+  text-align: right;
+}
+
+.survicess-tow .survicess-text p {
+  margin-left: auto;
+}
+
+.survicess-tow .survicess-img figure {
+  margin-right: auto;
+}
+
+/* ================ PRICE ============== */
+.price-section .box-content .price {
+  margin-bottom: 1.4rem;
+}
+
+.price-section .box-content .price span {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.not {
+  margin-right: 1.7rem;
+  position: relative;
+}
+
+.not::after {
+  content: '';
+  position: absolute;
+  width: 9rem;
+  height: 3px;
+  background: #fff;
+  top: 50%;
+  left: -8%;
+}
+
+.price-btn {
+  padding: .8rem 4rem;
+  border-radius: 50px;
+}
+
+.price-btn:hover {
+  background: transparent;
+  border-color: #fff;
+}
+
+/* ========== TEAM ========== */
+.team {
+  background: #fff !important;
+}
+
+.team .card-row .box {
+  flex-basis: 31% !important;
+}
+
+.team .tittle {
+  color: var(--text);
+}
+
+.team .desc {
+  color: var(--text);
+}
+
+.team .box-content h4 {
+  color: var(--text);
+}
+
+.team .box-content p {
+  color: var(--text);
+}
+
+.team .box-content h4 {
+  font-size: 2.3rem !important;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem !important;
+}
+
+.team .box-content p {
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+  color: var(--yellow);
+}
+
+.socal-icon i {
+  color: #fff;
+  font-size: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--yellow);
+  border-radius: 50%;
+  line-height: 3.5rem;
+  cursor: pointer;
+  margin: .5rem;
+}
+
+.socal-icon i:hover {
+  background: var(--text);
+  transition: .3s ease-in;
+}
+
+.socal-icon {
+  margin-top: 2rem;
+}
+
+/* ==================== WORK SECTION ===================== */
+#work {
+  padding: 10rem 0;
+  background: var(--yellow);
+  color: #fff;
+}
+
+#work .work-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#work .work-row .work-box {
+  flex-basis: 27%;
+  text-align: center;
+}
+
+#work .work-row .work-box h5 {
+  font-size: 2.8rem;
+  margin-top: .5rem;
+  font-weight: 700;
+}
+
+#work .work-row .work-box p {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+
+/* =================== BLOG SECTION =================== */
+.blog {
+  background: #fff !important;
+  color: var(--text) !important;
+}
+
+.blog .box-img img {
+  height: 28rem;
+  object-fit: cover;
+}
+
+.blog .card-row .box {
+  flex-basis: 31% !important;
+  border: 1px solid #eee;
+  box-shadow: 0px 0px 6px rgba(104, 104, 104, .2);
+  border-radius: 2px;
+  text-align: left !important;
+  transition: .3s ease-in;
+}
+
+.blog .card-row .box:hover {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, .0);
+}
+
+.blog .box-content {
+  padding: 0 20px 30px;
+}
+
+.blog .box-content h6 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.blog .box-content small {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--yellow);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.blog .box-content p {
+  color: var(--light);
+}
+
+.blog .box-content a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--yellow);
+}
+
+.blog .box-content a:hover {
+  text-decoration: underline;
+}
+
+/* ================ FOOTER ================ */
+footer {
+  background: var(--text);
+  color: #fff;
+  padding: 7rem 0;
+}
+
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-row .col1, footer .footer-row .col2 {
+  flex-basis: 25%;
+}
+
+footer .footer-row .col3 {
+  flex-basis: 50%;
+}
+
+footer .footer-content {
+  margin-top: 3rem;
+}
+
+footer h4 {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+footer p {
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  font-weight: 300;
+  color: #999;
+}
+
+footer a {
+  color: #fff;
+  line-height: 1.9;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-row .col3 {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.location {
+  display: flex;
+  height: 5rem;
+  margin-top: 3.5rem;
+}
+
+.location .yellow {
+  background: var(--yellow);
+  flex-basis: 70%;
+}
+
+.location .blue {
+  background: var(--blue);
+  flex-basis: 30%;
+}
+
+.location .blue i {
+  font-size: 2.3rem;
+  display: block;
+  line-height: 5rem;
+  text-align: center !important;
+}
+
+footer .socal-icon i {
+  color: var(--text);
+  background: #fff;
+  text-align: center;
+}
+
+footer .socal-icon i:hover {
+  background: var(--blue);
+  color: #fff;
+  transition: .3s ease-in;
+}
